@@ -5,7 +5,7 @@ from django.contrib.auth.decorators import login_required
 
 # Create your views here.
 def index(request):
-    posts = Post.objects.order_by('-pk')
+    posts = Post.objects.order_by('-pk').filter(user=request.user)
     context = {
         'posts': posts,
     }
