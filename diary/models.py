@@ -8,5 +8,5 @@ class Post(models.Model):
     content = models.TextField()
     # 현재의 시간 값을 디폴트값으로 받아가는 date
     date = models.DateTimeField(default=timezone.now)
-    users = models.ForeignKey(settings.AUTH_USER_MODEL,
+    user = models.ForeignKey(settings.AUTH_USER_MODEL,
                             on_delete=models.CASCADE)

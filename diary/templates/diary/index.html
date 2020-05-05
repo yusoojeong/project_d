@@ -4,6 +4,7 @@
 {% block content %}
     <h1 class="text-center">INDEX</h1>
     <hr class="border border-info bg-info" width="150px">
+    <a href="{% url 'diary:create' %}">Create</a>
     {% for post in posts %}
         <p>{{ post.title }}</p>
         <p>{{ post.date }}</p>
