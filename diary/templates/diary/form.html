@@ -2,11 +2,11 @@
 {% load bootstrap4 %}
 
 {% block content %}
-    <h1 class="text-center">SIGNUP</h1>
+    <h1 class="text-center">CREATE</h1>
     <hr class="border border-info bg-info" width="150px">
     <form action="" method="POST">
         {% csrf_token %}
         {% bootstrap_form form %}
-        <button class="btn btn-info">SIGNUP</button>
+        <button class="btn btn-info">CREATE</button>
     </form>
 {% endblock %}
