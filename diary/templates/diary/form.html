@@ -2,8 +2,8 @@
 {% load bootstrap4 %}
 
 {% block content %}
-    <h1 class="text-center">CREATE</h1>
-    <hr class="border border-info bg-info" width="150px">
+    <h1 class="text-center text-secondary">CREATE</h1>
+    <hr class="border border-secondary bg-secondary" width="150px">
     <form action="" method="POST">
         {% csrf_token %}
         {% bootstrap_form form %}

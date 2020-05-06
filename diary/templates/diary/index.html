@@ -2,9 +2,8 @@
 {% load bootstrap4 %}
 
 {% block content %}
-    <h1 class="text-center">INDEX</h1>
-    <hr class="border border-info bg-info" width="150px">
-    <a href="{% url 'diary:create' %}">Create</a>
+    <h1 class="text-center text-secondary">INDEX</h1>
+    <hr class="border border-secondary bg-secondary" width="150px">
     {% for post in posts %}
         <p>{{ post.title }}</p>
         <p>{{ post.date }}</p>
