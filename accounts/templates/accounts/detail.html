@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% load bootstrap4 %}
+
+{% block content %}
+    <h1 class="text-center">유저페이지</h1>
+    <hr class="border border-info bg-info" width="150px">
+    <p>{{ user.username }}</p>
+    {% if user.email %}
+        <p>{{ user.email }}</p>
+    {% else %}
+        <p>email이 없습니다.</p>
+    {% endif %}
+{% endblock %}

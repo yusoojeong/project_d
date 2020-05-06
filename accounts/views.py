@@ -37,3 +37,11 @@ def login(request):
 def logout(request):
     auth_logout(request)
     return redirect('diary:index')
+
+@login_required
+def detail(request):
+    user = request.user
+    context = {
+        'user': user,
+    }
+    return render(request, 'accounts/detail.html', context)
