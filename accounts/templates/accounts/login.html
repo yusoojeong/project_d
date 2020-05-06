@@ -2,11 +2,12 @@
 {% load bootstrap4 %}
 
 {% block content %}
-    <h1 class="text-center">LOGIN</h1>
+    <h1 class="text-center">로그인</h1>
     <hr class="border border-info bg-info" width="150px">
     <form action="" method="POST">
         {% csrf_token %}
         {% bootstrap_form form %}
-        <button class="btn btn-info">LOGIN</button>
+        <button class="btn btn-info">로그인</button>
+        <a class="btn btn-primary" href="{% url 'accounts:signup' %}">회원가입</a>
     </form>
 {% endblock %}
